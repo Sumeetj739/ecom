@@ -1,0 +1,18 @@
+
+<table class="table table-success table-striped mytable">
+   
+    <thead>
+        <th>productId</th> <th>productName</th> <th>productPrice</th> <th>createdDate</th><th>Image</th>
+    </thead>
+
+    <tbody>
+
+        <tr *ngFor="let p of productArray">
+            <td>{{p.productId}}</td> <td>{{p.productName}}</td> <td>{{p.productPrice}}</td> <td>{{p.createdDate}}</td>
+            <td><img [src]="p.productImageUrl" id="img1"></td>
+        </tr>
+
+    </tbody>
+
+
+  </table>

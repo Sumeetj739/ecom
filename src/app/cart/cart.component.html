@@ -1,0 +1,53 @@
+<div class="cart-container" *ngIf="cartItems.length > 0; else emptyCart">
+    <h2>Your Cart</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cartItems">
+          <td>{{ item.productName }}</td>
+          <td>{{ item.productPrice | currency }}</td>
+          <td>
+            <input type="number" id="quantity" [(ngModel)]="item.quantity" (change)="updateCart(item)" min="1" value="1"/>
+          </td>
+          <td>{{ (item.productPrice * item.quantity) | currency }}</td>
+          <td>
+            <button (click)="removeItem(item)">Remove</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    <div class="continueLink">
+        <a routerLink="/Product" class="">  Continue Shopping</a>
+    </div>
+   
+  
+    <div class="cart-summary">
+      <h3>Cart Summary</h3>
+      <p>Subtotal: {{ getTotalPrice() | currency }}</p>
+      <button class="checkout-btn" (click)="checkout()">Proceed to Checkout</button>
+    </div>
+
+</div>
+
+
+ 
+  
+  <!-- Empty Cart State -->
+  <ng-template #emptyCart>
+    <div class="empty-cart">
+      <h2>Your cart is empty</h2>
+      <a routerLink="/AllProducts" class="continue-shopping">Continue Shopping</a>
+    </div>
+  </ng-template>
+  

@@ -1,0 +1,33 @@
+<section class="product-detail-section">
+  
+  <div class="product-detail-container">
+   
+    <div class="product-image">
+      <img [src]="myproduct.productImageUrl" alt="Product Image" />
+    </div>
+
+    <div class="product-info">
+      <h1>{{myproduct.productName }}</h1>
+      <p class="price">{{myproduct.productPrice | currency}}</p>
+      <p class="product-description">
+        {{myproduct.productDescription}}
+      </p>
+
+      <div class="product-actions">
+        <input type="number" value="1" min="1" max="10" class="quantity-input" />
+        <button class="add-to-cart-btn" (click)="addToCart(myproduct)">Add to Cart</button>
+      </div>
+
+      <div class="additional-details">
+        <h3>Product Details</h3>
+        <ul>
+          <li><strong>Brand:</strong> {{myproduct.productSku}}</li>
+          <li><strong>Model:</strong> {{myproduct.categoryId}}</li>
+          <li><strong>Warranty:</strong> 1 Year</li>
+          <li><strong>Color:</strong> Black</li>
+          <li><strong>Shipping:</strong> {{myproduct.deliveryTimeSpan}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

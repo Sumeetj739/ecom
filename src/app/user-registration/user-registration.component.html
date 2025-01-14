@@ -1,0 +1,81 @@
+<div class="registration-container">
+    <h2>User Registration</h2>
+  
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input
+          id="fullName"
+          type="text"
+          formControlName="fullName"
+          placeholder="Enter your full name"
+        />
+        <div *ngIf="submitted && registrationForm.controls['fullName'].errors">
+          <span class="error">Full Name is required</span>
+        </div>
+      </div>
+  
+      <!-- Email -->
+       <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          formControlName="email"
+          placeholder="Enter your email"
+        />
+        <div *ngIf="submitted && registrationForm.controls['email'].errors">
+          <span class="error">Valid Email is required</span>
+        </div>
+      </div>
+   
+      <!-- Password -->
+       <div class="form-group"> 
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          formControlName="password"
+          placeholder="Enter your password"
+          required
+        />
+        <div *ngIf="submitted && registrationForm.controls['password'].errors">
+          <span class="error"
+            >Password must be at least 6 characters</span
+          >
+        </div>
+      </div> 
+  
+      <!-- Confirm Password -->
+       <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          id="confirmPassword"
+          type="password"
+          formControlName="confirmPassword"
+          placeholder="Confirm your password"
+        />
+        <div *ngIf="submitted && registrationForm.controls['confirmPassword'].errors">
+          <span class="error">Passwords must match</span>
+        </div>
+      </div>
+   
+      <!-- Phone Number -->
+       <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input
+          id="phoneNumber"
+          type="text"
+          formControlName="phoneNumber"
+          placeholder="Enter your phone number"
+        />
+        <div *ngIf="submitted && registrationForm.controls['phoneNumber'].errors">
+          <span class="error">Valid Phone Number is required</span>
+        </div>
+      </div>
+  
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+  </div>
+  

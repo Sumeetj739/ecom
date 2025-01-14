@@ -1,0 +1,52 @@
+
+
+
+
+
+<div class="mycard">
+<div class="cardbody" *ngFor="let p of productArray">
+    <img [src]="p.productImageUrl" >
+    <div class="card-body cr2">
+      <h5 class="card-title">{{p.productName}}</h5>
+      <p class="card-text">{{p.productPrice}}</p>
+<button type="button" class="btn btn-primary" (click)="addToCart(p)">AddToCart</button>
+<button type="button" class="btn btn-warning" (click)="showProduct(p)">view</button>
+
+
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- <table class = "table table-hover mytable">
+ <thead>
+<th>Pid</th>
+<th>Pname</th>
+<th>createdDate</th>
+<th>Price</th>
+<th>image</th>   
+    </thead>
+ <tbody>
+
+<tr *ngFor = "let p of productArray">
+    
+    <td>{{p.productId}}</td>
+    <td>{{p.productName}}</td>
+    <td>{{p.createdDate}}</td>
+    <td>{{p.productPrice}}</td>
+    <td><img [src] = "p.productImageUrl" id = "img1"></td>
+
+</tr>
+    </tbody>
+
+  </table> -->

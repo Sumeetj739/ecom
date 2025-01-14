@@ -1,0 +1,75 @@
+<div class="payment-container">
+    <h2>Payment</h2>
+  
+    <!-- Order Summary Section -->
+    <div class="order-summary">
+      <h3>Order Summary</h3>
+      <ul>
+        <li *ngFor="let item of cartItems">
+          {{ item.name }} - {{ item.quantity }} x {{ item.price | currency }}
+        </li>
+      </ul>
+      <p><strong>Total: </strong> {{ getTotal() | currency }}</p>
+    </div>
+  
+    <!-- Payment Form Section -->
+    <form (ngSubmit)="processPayment()" #paymentForm="ngForm">
+      <div class="form-group">
+        <label for="cardNumber">Card Number</label>
+        <input
+          type="text"
+          id="cardNumber"
+          name="cardNumber"
+          [(ngModel)]="paymentDetails.cardNumber"
+          required
+          placeholder="Enter your card number"
+          #cardNumber="ngModel"
+          [ngClass]="{'is-invalid': cardNumber.invalid && cardNumber.touched}"
+        />
+        <div *ngIf="cardNumber.invalid && cardNumber.touched" class="error">
+          Card number is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="expiryDate">Expiry Date</label>
+        <input
+          type="text"
+          id="expiryDate"
+          name="expiryDate"
+          [(ngModel)]="paymentDetails.expiryDate"
+          required
+          placeholder="MM/YY"
+          #expiryDate="ngModel"
+          [ngClass]="{'is-invalid': expiryDate.invalid && expiryDate.touched}"
+        />
+        <div *ngIf="expiryDate.invalid && expiryDate.touched" class="error">
+          Expiry date is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="cvv">CVV</label>
+        <input
+          type="text"
+          id="cvv"
+          name="cvv"
+          [(ngModel)]="paymentDetails.cvv"
+          required
+          placeholder="Enter your CVV"
+          #cvv="ngModel"
+          [ngClass]="{'is-invalid': cvv.invalid && cvv.touched}"
+        />
+        <div *ngIf="cvv.invalid && cvv.touched" class="error">
+          CVV is required.
+        </div>
+      </div>
+  
+      <button type="submit" [disabled]="paymentForm.invalid">Pay Now</button>
+    </form>
+  
+    <div *ngIf="paymentSuccess" class="success-message">
+      Payment Successful! Thank you for your purchase.
+    </div>
+  </div>
+  

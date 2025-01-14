@@ -1,0 +1,24 @@
+#logo{
+    
+    height: 60px;
+    margin-top: 11px;
+}
+
+#cart{
+    height: 40px;
+    
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+#logout{
+    height: 35px;
+    
+    margin-right: 20px;
+
+}
+#user{
+    height: 40px;
+    
+    margin-right: 20px;
+}
