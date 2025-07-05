@@ -1,0 +1,148 @@
+/* .nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(248, 109, 59);
+  padding-bottom: 8px;
+}
+.nav h1 {
+  color:  black;
+  margin: 0;
+  font-size: 40px;
+}
+
+.nav ul {
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 9px;
+
+}
+
+.nav li {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color:  black;
+}
+
+.nav .nav-search {
+  margin-top: 15px;
+  flex: 1;
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.nav .nav-search input {
+  flex: 1;
+  color: rgb(248, 109, 59);
+  border: 1px solid blackt;
+  height: 37px;
+  border-right: 0px;
+  margin-right: 3px;
+}
+
+.nav .nav-search  {
+  color: black;
+  border: 1px solid  black;
+  height: 39px;
+  border-left: 0px;
+}
+h1 a .username{
+  
+  text-decoration: none;
+}
+
+.username{
+  color:  rgb(233, 223, 223);
+  text-decoration: none;
+  
+  
+} */
+
+
+
+
+
+
+.btn{
+  background-color:rgb(248, 109, 59);
+border: none;
+  color: white;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}   
+
+.logo {
+  width: 100px;
+  height: 50px;
+  padding-top: 10px;
+}
+
+.collapse-navbar-collapse{
+
+ margin-left: 100px;
+
+} 
+
+ #navbarSupportedContent{
+  align-items: end;
+  justify-content: right;
+ }
+ 
+
+ .form-control{
+  width: 600px;
+  /* padding-left: 60px; */
+  margin-left: 850px;
+} 
+
+.suggested-result{
+  position: absolute;
+  display: list-item;
+  z-index: 10;
+  
+  background-color: #fff;
+  width: 0px;
+  top: 40px; 
+  /* border: 1px solid#ddd; */
+  margin-top: 30px;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+.suggested-result li{
+  padding: 5px;
+  width: 600px;
+  margin-left: 800px;
+  background-color: white;
+
+}
+
+.suggested-result li a{
+  cursor: pointer;
+
+}
+
+.log,.logout{
+  margin-top:  9px;
+  text-decoration: none;
+  padding: 1px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.suggested-result li :hover{
+  background-color: gray
+
+}

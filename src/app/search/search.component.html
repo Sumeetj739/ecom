@@ -1,0 +1,18 @@
+<h5 style="margin-top: 100px; padding: 10px;">Search Items!</h5>
+
+<div class="row search item pt-1 serachBox cotainer" *ngFor="let item of  searchResult">
+    <div class="col-sm-3 ">
+      <a routerLink="/details/{{item.id}}">
+        <img src="{{item.image}}" alt="" srcset="" class="img">  
+      </a>
+    </div>
+
+    <div class="col-sm-8 details">
+      <a routerLink="/details/{{item.id}}" class="pname">
+        <h6>{{item.name}}</h6></a>
+        <p><b>₹{{item.price}}</b></p>
+        <p><b>Color-</b>{{item.color}}</p>
+         <p><b>Catagory-</b>{{item.category}}</p>
+    </div>
+
+</div>

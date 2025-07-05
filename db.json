@@ -1,0 +1,275 @@
+{
+  "seller": [
+    {
+      "id": "6de2",
+      "name": "sumeet",
+      "email": "sumeet@seller.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "38d2",
+      "name": "sam sidhu",
+      "email": "sam@seeller.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "8f41",
+      "name": "don jadhav",
+      "password": "abc@123",
+      "email": "don@gmail.com"
+    },
+    {
+      "id": "8457",
+      "name": "peter",
+      "password": "abc@123",
+      "email": "peter@gmail.com"
+    },
+    {
+      "id": "6b88",
+      "name": "sss",
+      "email": "ssss",
+      "password": "aaaaa"
+    },
+    {
+      "id": "26e1",
+      "name": "ss",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "f902",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "4d69",
+      "name": "",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "658d",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "0937",
+      "name": "1111111",
+      "email": "11111111111",
+      "password": "111111111111"
+    },
+    {
+      "id": "50b3",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "2b23",
+      "name": "",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "25f2",
+      "name": "",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "1b15",
+      "name": "",
+      "password": ""
+    },
+    {
+      "id": "b517",
+      "name": "",
+      "password": ""
+    },
+    {
+      "id": "b09b",
+      "name": "",
+      "password": ""
+    },
+    {
+      "id": "2946",
+      "name": "",
+      "password": ""
+    },
+    {
+      "id": "0e33",
+      "name": "",
+      "password": ""
+    },
+    {
+      "id": "7b02",
+      "name": "",
+      "password": ""
+    },
+    {
+      "id": "eda6",
+      "name": "",
+      "password": ""
+    },
+    {
+      "id": "fed1",
+      "name": "",
+      "password": ""
+    },
+    {
+      "id": "1fcf",
+      "name": "",
+      "password": ""
+    },
+    {
+      "id": "bf32",
+      "name": "",
+      "password": ""
+    }
+  ],
+  "products": [
+    {
+      "id": "7781",
+      "name": "Men White Classic Fit Solid Full Sleeves Formal Shirt",
+      "price": "4500",
+      "color": "White",
+      "catagory": "Shirt",
+      "description": "Elevate your formal wardrobe with this Louis Philippe classic-fit shirt in timeless white. ",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRii0E_jAA0ug86FLBslqdjgptjao-evASB5We2-Epp21VFVfdcTSzgZ9D9jqK_HHkrr9HsuUv8baabcLMjr6A6cC6tJGsGWsRe00GIKIkHJA-SKvllvZeeyg"
+    },
+    {
+      "id": "a76b",
+      "name": "Men Printed Slim Fit Polo Sports T-shirt ",
+      "price": "900",
+      "color": "Black",
+      "catagory": "Gym Ware",
+      "description": "Stay cool and stylish in our Men's Active T-Shirt",
+      "image": "https://www.superkicks.in/cdn/shop/files/4_e3cb7d6a-7fc2-4b56-9b5e-648caae7f2e6.jpg?v=1727175727"
+    },
+    {
+      "name": "Men Regular Fit Shirt with Patch Pocket",
+      "price": "440",
+      "color": "maroon",
+      "catagory": "Shirt",
+      "description": "Casual Maroon Regular Fit Medium",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20250607/uINt/68433b7b55340d4b4f8d2801/-473Wx593H-701685589-maroon-MODEL4.jpg",
+      "id": "b40a"
+    },
+    {
+      "id": "f0fd",
+      "name": "Men Checked Regular Fit Shirt with Patch Pocket",
+      "price": "298",
+      "color": "red",
+      "catagory": "shirt",
+      "description": "Casual Red Medium Package contains: 1 shirt",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20250624/tW43/685a9cff0f920c69cc50c99e/-473Wx593H-701811033-red-MODEL2.jpg"
+    },
+    {
+      "id": "8f21",
+      "name": "Men Checked Slim Fit Shirt with Patch Pocket",
+      "price": "507",
+      "color": "blue",
+      "catagory": "shirt",
+      "description": "Curved hem Blue Slim Fit Package contains: 1 shirt Machine wash Classic",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20240612/78nO/666acd491d763220fa867817/-473Wx593H-460353496-blue-MODEL.jpg"
+    },
+    {
+      "name": "Men Checked Slim Fit Shirt with Patch Pocket",
+      "price": "290",
+      "color": "brown",
+      "catagory": "shirt",
+      "description": "Curved hem Olive & Yellow Slim Fit Machine wash",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20240319/1seT/65f9a87516fd2c6e6a6edc4a/-473Wx593H-460353498-yellow-MODEL2.jpg",
+      "id": "2bcb"
+    },
+    {
+      "id": "e8c6",
+      "name": "Men Checked Slim Fit Shirt with Patch Pocket",
+      "price": "590",
+      "color": "green",
+      "catagory": "shirt",
+      "description": "Curved hemline Red & Blue Slim Fit Package contains: 1 shirt Machine wash cold",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20240319/OYjG/65f9a3c705ac7d77bbc8de54/-473Wx593H-460353507-green-MODEL.jpg"
+    },
+    {
+      "id": "41fb",
+      "name": "Men Checked Slim Fit Shirt with Patch Pocket",
+      "price": "650",
+      "color": "chocolatey",
+      "catagory": "shirt",
+      "description": "Blue Slim Fit Medium Machine wash",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230621/QuJ6/6492217b42f9e729d759d779/-473Wx593H-463378832-blue-MODEL.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "9323",
+      "name": "aaaaa",
+      "email": "aaaaaaaaaa",
+      "password": "aaaaaaaaaaaaa"
+    },
+    {
+      "id": "a475",
+      "name": "sumeet",
+      "email": "sumeet@d.com",
+      "password": "1234"
+    },
+    {
+      "id": "5a46",
+      "name": "pooja",
+      "email": "pooja@sbi.com",
+      "password": "1234"
+    },
+    {
+      "id": "ebb6",
+      "name": "ss",
+      "email": "ssssss",
+      "password": "sssssssss"
+    },
+    {
+      "id": "1271",
+      "name": "dan",
+      "email": "abc@fmail.comn",
+      "password": "1234"
+    },
+    {
+      "id": "afc9",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "3061",
+      "name": "sumeet",
+      "email": "sususu",
+      "password": "jswdededededd"
+    },
+    {
+      "id": "02ee",
+      "name": "sssss",
+      "email": "sssssssssss",
+      "password": "sssssssssss"
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "id": "4872",
+      "email": "sumeetj739@gmail.com",
+      "address": "naik nagar parbhnai",
+      "contact": "9890343329",
+      "totalPrice": 4600,
+      "userId": "a475"
+    },
+    {
+      "id": "8553",
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 1000,
+      "userId": "a475"
+    }
+  ]
+}

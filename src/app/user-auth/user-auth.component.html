@@ -1,0 +1,120 @@
+
+
+
+
+
+<div class="user-auth pt-5">
+<div class="card  container " style="width: 30rem" >
+
+  <div class="userSignUp" *ngIf="!showLogIn">
+    <!-- <p style="margin-top: 100px;">user-auth works!</p> -->
+    <h1>User Sign-Up</h1>
+
+    <form
+      #userSignUp="ngForm"
+      (ngSubmit)="signUp(userSignUp.value)"
+      class="px-4 py-3"
+    >
+      <div class="form-group">
+        <label for="exampleDropdownFormName">Name</label>
+        <input
+          type="email"
+          class="form-control"
+          ngModel
+          name="name"
+          id="exampleDropdownFormName"
+          placeholder="Name"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="exampleDropdownFormEmail">Email Id</label>
+        <input
+          type="email"
+          class="form-control"
+          ngModel
+          name="email"
+          id="exampleDropdownFormEmail"
+          placeholder="abc@example.com"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="exampleDropdownFormPassword1">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          ngModel
+          name="password"
+          id="exampleDropdownFormPassword1"
+          placeholder="Password"
+        />
+      </div>
+      
+      <button type="submit" class="btn btn-primary mt-1">Sign up</button><br />
+      <a class="auth-toggle-link" (click)="openLogin()"
+        >Already Have Account ? Click To Log In
+      </a>
+    </form>
+  </div>
+
+  <div class="user-log-in" *ngIf="showLogIn">
+    <h1>User Log In</h1>
+
+    <!-- <p style="margin-top: 100px;">user-auth works!</p> -->
+
+    <form
+    
+      #userLogin="ngForm"
+      (ngSubmit)="login(userLogin.value)"
+      class="px-4 py-3"
+    >
+      <div class="form-group">
+        <label for="exampleDropdownFormName">Email Id</label>
+        <input
+          type="email"
+          class="form-control"
+          ngModel
+          #email="ngModel"
+          required
+          email
+          name="email"
+          id="exampleDropdownFormName"
+          placeholder="Name"
+        />
+        <p><span *ngIf="email.invalid && email.touched"  class="invalid">Please Enter Valid Email Id</span></p>
+      
+      </div>
+
+      <div class="form-group">
+        <label for="exampleDropdownFormPassword1">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          ngModel
+          name="password"
+          #password="ngModel"
+          required
+          minlength="2"
+          maxlength="20"
+          id="exampleDropdownFormPassword1"
+          placeholder="Password"
+        />
+        <p><span *ngIf="password.invalid && password.touched"  class="invalid">Please Enter Valid password </span></p>
+
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="dropdownCheck" />
+        <label class="form-check-label" for="dropdownCheck">
+          Remember me
+        </label>
+      </div>
+      <p class="invalid"> {{authError}}</p>
+
+      <button [disabled]="userLogin.invalid"type="submit" class="btn btn-primary">Log in</button><br />
+      <a class="auth-toggle-link" (click)="openSignUp()"
+        >Dont't Have Account ? Click To Sign Up
+      </a>
+    </form>
+  </div>
+</div>

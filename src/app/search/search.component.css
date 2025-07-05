@@ -1,0 +1,10 @@
+.img{
+    height: 200px;
+    padding: 10px;
+}
+.serachBox{
+border-top: 1px solid grey;
+}
+.pname{
+    text-decoration: none;
+}

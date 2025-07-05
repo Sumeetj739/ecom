@@ -1,0 +1,50 @@
+.product-header-image{
+    object-fit: contain;
+    height: 300px;
+    width: 300px;
+ display: block;
+  margin: 0 auto;
+
+}
+
+.picsum-img-wrapper{
+height: 500px;
+margin-top: 100px;
+cursor: pointer;
+}
+
+
+.carousel-caption{
+    background-color: black;
+    border-radius: 5px;
+    /* margin-top: 55px; */
+    height: 150px;
+}
+
+.btn{
+  background-color:rgb(248, 109, 59);
+border: none;
+  color: white;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+} 
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+.card img {
+  height: 200px;
+  object-fit: contain;
+  padding-top: 5px;
+}
+
+.card-text{
+  cursor: pointer;
+}
+
+.card-img-top{
+  cursor: pointer;
+}
